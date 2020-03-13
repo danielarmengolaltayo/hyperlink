@@ -26,7 +26,7 @@
             {%- if pagename == filename -%}
             <span class="dot selected"></span> {{ capsule.head }}
             {%- else -%}
-            <span class="dot nonselected"></span> <a href="{{ capsule.url }}">{{ capsule.head }}</a>
+            <span class="dot nonselected"></span> <a href="{{ site.baseurl }}{{ capsule.url }}">{{ capsule.head }}</a>
             {%- endif -%}
         </div>
         {%- endif -%}
