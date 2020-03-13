@@ -1,0 +1,38 @@
+<div class="chapterTitle">
+    {{ page.head }}
+</div>
+
+<div id="body">
+    {{ content }}
+</div>
+
+<div id="footnotes">
+
+    {%- for footnote in page.footnotes -%}
+
+    <div class="footnote">
+
+        {%- for ref in site.references -%}
+
+        {%- assign footnoteFile = footnote.file | plus: 0 -%}
+        {%- assign refPath = ref.path | remove: '_references/' | remove: '.md' | plus: 0 -%}
+
+        {%- if footnoteFile == refPath -%}
+        {%- assign id = footnote.id | plus: 0 -%}
+        <div class="footnoteId">{{ id }}.</div>
+        <div class="footnoteContent" id="{{ refPath | prepend: 'ref' }}">
+            {%- if ref.content -%}{{ ref.content | markdownify | remove:'<p>' | remove:'</p>' }}<br>{%- endif -%}
+            {%- if ref.link -%}<a href="{{ ref.link }}" target="blank">{{ ref.link }}</a>{%- endif -%}
+        </div>
+
+        {%- endif -%}
+
+        {%- endfor -%}
+
+    </div>
+
+    {%- endfor -%}
+
+
+
+</div>

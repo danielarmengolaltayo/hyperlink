@@ -1,0 +1,42 @@
+{%- assign pagename = page.url | remove: '/capsules/' | remove: '.html' -%}
+
+{%- for outline in site.data.outline -%}
+
+{%- if outline.chapter -%}
+<div class="chapter">
+    <div class="chapterTitle">
+        {{ outline.chapter }}
+    </div>
+    {%- endif -%}
+
+    {%- for filename in outline.capsules -%}
+
+    {%- if outline.chapter -%}
+    <div class="capsule">
+        {%- endif -%}
+
+        {%- for capsule in site.capsules -%}
+
+        {%- assign path = capsule.path | remove: '_capsules/' | remove: '.md' -%}
+
+        {%- if filename == path -%}
+
+        {%- if capsule.head -%}
+        <div class="head" id="{{ filename }}">
+            {%- if pagename == filename -%}
+            <span class="dot selected"></span> {{ capsule.head }}
+            {%- else -%}
+            <span class="dot nonselected"></span> <a href="{{ capsule.url }}">{{ capsule.head }}</a>
+            {%- endif -%}
+        </div>
+        {%- endif -%}
+
+        {%- endif -%}
+
+        {%- endfor -%}
+
+    </div>
+    {%- endfor -%}
+
+</div>
+{%- endfor -%}

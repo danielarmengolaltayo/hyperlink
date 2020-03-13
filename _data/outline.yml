@@ -1,0 +1,26 @@
+- chapter: Preface
+  capsules:
+    - format
+    - preface-link
+- chapter: Introduction
+  capsules:
+    - internet-collective-portrait
+    - complex-technology
+    - differences-internet-web
+- chapter: The design of the Web
+  capsules:
+    - browse-the-web-using-links
+    - links-are-pointers
+    - true-connections-web
+- chapter: Consequences
+  capsules:
+    - platforms-manage-connections
+    - platforms-need-attention
+- chapter: Conclusion
+  capsules:
+    - game-of-inequality
+    - unidirectionality-of-links
+- chapter: My response
+  capsules:
+    - upgrade-the-web
+    - contact-and-follow

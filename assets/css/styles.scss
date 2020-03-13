@@ -1,0 +1,154 @@
+---
+---
+// $indent: 30px;
+$backgroundColor: #fcfcfc;
+$dotBorderColor: #ccc;
+$selectedTextColor: #e3e3e3;
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-width: 320px; //limit media query
+    height: 100%;
+    background-color: $backgroundColor;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+p{
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+sup {
+    font-size: 0.75em;
+    vertical-align: middle;
+    line-height: 0;
+    position: relative;
+    top: -0.5em;
+}
+
+ul { padding-inline-start: 20px; }
+
+.container {
+    margin: auto;
+    display: flex;
+}
+
+#title{
+    margin: 20px 27px;
+    width: 100%;
+}
+
+#context,
+#outline {
+    width: 40%;
+}
+
+#context,
+#outline, 
+#content {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 27px;
+    word-break:break-word;
+}
+
+#context { opacity: 0.2; }
+#context:hover { opacity: 1; }
+
+a { color: blue; }
+
+.head{
+    display: grid;
+    grid-template-columns: 1.6em auto;
+}
+
+.chapterTitle {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.capsule { margin-left: 15px; }
+
+#body { margin-bottom: 60px; }
+
+#footnotes {
+    font-size: 0.75em;
+    line-height: 1.4em;
+    opacity: 0.2;
+    margin-bottom: 20px;
+}
+
+#footnotes:hover { opacity: 1; }
+
+.footnote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.footnoteId { min-width: 20px; }
+
+.footnoteContent { flex-grow: 1; }
+
+.dot {
+    height: 0.4em;
+    width: 0.4em;
+    border-radius: 50%;
+    position: relative;
+    top: 0.2em;
+}
+
+.nonselected{
+    background-color: black;
+    border: 0.3em solid $backgroundColor;
+}
+
+.head:hover .nonselected{ border: 0.3em solid $dotBorderColor; } 
+
+.selected{
+    background-color: black;
+    border: 0.3em solid $dotBorderColor;
+}
+
+::-moz-selection { background: $selectedTextColor; } // Code for Firefox
+::selection { background: $selectedTextColor; }
+
+
+// media query breaking points via https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+
+@media (min-width: 1281px) {
+    .container { width: 80%; }
+    //display context+content
+    #context{ display: block; }
+    #content { width: 60%; }
+    #context, #outline, #content { margin-right: 50px; }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container { width: 100%; }
+    //display context+content
+    #context { display: block; }
+    #content { width: 60%; }
+    #context, #outline, #content { margin-right: 50px; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container { width: 80%; }
+    //display content only
+    #context { display: none; }
+    #outline, #content { width: 100%; } 
+    #context, #outline, #content { margin-right: 27px; }
+}
+
+@media (min-width: 0px) and (max-width: 767px) { // min-width: 320px
+    .container { width: 100%; }
+    //display content only
+    #context { display: none; }
+    #outline, #content { width: 100%; }
+    #context, #outline, #content { margin-right: 27px; }
+}

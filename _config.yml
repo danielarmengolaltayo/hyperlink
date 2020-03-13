@@ -1,0 +1,16 @@
+collections:
+  capsules:
+    output: true
+  references:
+    output: true
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
+defaults:
+  - scope:
+      path: ""
+      type: "capsules"
+    values:
+      layout: "capsule"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
