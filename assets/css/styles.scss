@@ -43,13 +43,18 @@ ul { padding-inline-start: 20px; }
 }
 
 #context,
-#outline {
+#contextHome {
     width: 40%;
 }
 
+#contentHome {
+    width: 60%;
+}
+
 #context,
-#outline, 
-#content {
+#contextHome, 
+#content,
+#contentHome {
     margin-top: 0px;
     margin-bottom: 50px;
     margin-left: 27px;
@@ -124,31 +129,31 @@ a { color: blue; }
 @media (min-width: 1281px) {
     .container { width: 80%; }
     //display context+content
-    #context{ display: block; }
+    #context, #contentHome{ display: block; }
     #content { width: 60%; }
-    #context, #outline, #content { margin-right: 50px; }
+    #context, #contextHome, #content, #contentHome { margin-right: 50px; }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .container { width: 100%; }
     //display context+content
-    #context { display: block; }
+    #context, #contentHome { display: block; }
     #content { width: 60%; }
-    #context, #outline, #content { margin-right: 50px; }
+    #context, #contextHome, #content, #contentHome { margin-right: 50px; }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container { width: 80%; }
     //display content only
-    #context { display: none; }
-    #outline, #content { width: 100%; } 
-    #context, #outline, #content { margin-right: 27px; }
+    #context, #contentHome { display: none; }
+    #contextHome, #content { width: 100%; } 
+    #context, #contextHome, #content { margin-right: 27px; }
 }
 
 @media (min-width: 0px) and (max-width: 767px) { // min-width: 320px
     .container { width: 100%; }
     //display content only
-    #context { display: none; }
-    #outline, #content { width: 100%; }
-    #context, #outline, #content { margin-right: 27px; }
+    #context, #contentHome { display: none; }
+    #contextHome, #content { width: 100%; }
+    #context, #contextHome, #content { margin-right: 27px; }
 }
