@@ -4,6 +4,7 @@
 $backgroundColor: #fcfcfc;
 $dotBorderColor: #ccc;
 $selectedTextColor: #e3e3e3;
+$opacity: 0.2;
 
 html,
 body {
@@ -61,7 +62,7 @@ ul { padding-inline-start: 20px; }
     word-break:break-word;
 }
 
-#context { opacity: 0.2; }
+#context { opacity: $opacity; }
 #context:hover { opacity: 1; }
 
 a { color: blue; }
@@ -84,7 +85,6 @@ a { color: blue; }
 #footnotes {
     font-size: 0.75em;
     line-height: 1.4em;
-    opacity: 0.2;
     margin-bottom: 20px;
 }
 
@@ -132,6 +132,7 @@ a { color: blue; }
     #context, #contentHome{ display: block; }
     #content { width: 60%; }
     #context, #contextHome, #content, #contentHome { margin-right: 50px; }
+    #footnotes { opacity: $opacity; }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -140,6 +141,7 @@ a { color: blue; }
     #context, #contentHome { display: block; }
     #content { width: 60%; }
     #context, #contextHome, #content, #contentHome { margin-right: 50px; }
+    #footnotes { opacity: $opacity; }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -148,6 +150,7 @@ a { color: blue; }
     #context, #contentHome { display: none; }
     #contextHome, #content { width: 100%; } 
     #context, #contextHome, #content { margin-right: 27px; }
+    #footnotes { opacity: 1; }
 }
 
 @media (min-width: 0px) and (max-width: 767px) { // min-width: 320px
@@ -156,4 +159,5 @@ a { color: blue; }
     #context, #contentHome { display: none; }
     #contextHome, #content { width: 100%; }
     #context, #contextHome, #content { margin-right: 27px; }
+    #footnotes { opacity: 1; }
 }
