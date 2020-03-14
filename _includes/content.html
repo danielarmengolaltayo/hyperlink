@@ -22,7 +22,7 @@
         <div class="footnoteId">{{ id }}.</div>
         <div class="footnoteContent" id="{{ refPath | prepend: 'ref' }}">
             {%- if ref.content -%}{{ ref.content | markdownify | remove:'<p>' | remove:'</p>' }}<br>{%- endif -%}
-            {%- if ref.link -%}<a href="{{ ref.link }}" target="blank">{{ ref.link }}</a>{%- endif -%}
+            {%- if ref.link and ref.title -%}<a href="{{ ref.link }}" target="blank">{{ ref.title }}</a>{%- endif -%}
         </div>
 
         {%- endif -%}
