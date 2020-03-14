@@ -23,6 +23,9 @@ p{
     margin-block-end: 1rem;
 }
 
+a:link, a:visited, a:active{ text-decoration: none; }
+a:hover { text-decoration: underline; }
+
 //via https://gist.github.com/unruthless/413930
 sup {
     font-size: 75%;
