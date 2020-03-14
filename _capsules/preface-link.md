@@ -1,9 +1,9 @@
 ---
 head: Why I wrote this text and why you may be interested in reading it.
 footnotes:
-  - {id: 1, file: 2}
-  - {id: 2, file: 3}
-  - {id: 3, file: 4}
+  - {id: 1, file: 02}
+  - {id: 2, file: 03}
+  - {id: 3, file: 04}
 ---
 
 Hello, my name is Daniel and this is my attempt to explain what I decided to focus my attention on and why I think it is important that we do something about it. It is my way to state my commitment, part of a collective effort to improve how we relate to each other, as a subset of how we relate to life and the environment.

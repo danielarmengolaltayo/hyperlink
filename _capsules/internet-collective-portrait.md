@@ -1,7 +1,7 @@
 ---
 head: The Internet is a living collective portrait of humanity.
 footnotes:
-  - {id: 1, file: 5}
+  - {id: 1, file: 05}
 ---
 
 We can see on the Internet who we are and even how we get here, and paying a little bit more of attention, we can also see through the Internet the vast potential we have as a species. This is because the Internet is not only a product resulting from our past actions, but also guides us and provides the necessary opportunities for our future behavior to emerge.

@@ -1,10 +1,10 @@
 ---
 head: We need complex technology to cope with complexity.
 footnotes:
-  - {id: 1, file: 6}
-  - {id: 2, file: 7}
-  - {id: 3, file: 8}
-  - {id: 4, file: 9}
+  - {id: 1, file: 06}
+  - {id: 2, file: 07}
+  - {id: 3, file: 08}
+  - {id: 4, file: 09}
   - {id: 5, file: 10}
 ---
 
