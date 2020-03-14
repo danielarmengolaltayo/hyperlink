@@ -6,7 +6,7 @@ footnotes:
   - {id: 3, file: 08}
   - {id: 4, file: 09}
   - {id: 5, file: 10}
-  - {id: 5, file: 52}
+  - {id: 6, file: 52}
 ---
 
 One way to organize and categorize the human past is by using the breakthroughs in technology as historical landmarks <sup>[1]</sup>. According to this approach, our present, the moment we are living now fits in what we call the information age, also known as the computer age, the digital age or the internet age <sup>[2]</sup>. Choose your favorite label, all ages make reference to the same story. Computers represented a big leap in how humans store, retrieve, manipulate and transmit information <sup>[3]</sup>, and then the Internet extended the power of computers and transformed us into a digital society.
