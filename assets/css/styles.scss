@@ -23,6 +23,7 @@ p{
     margin-block-end: 1rem;
 }
 
+a { color: blue; }
 a:link, a:visited, a:active{ text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -68,8 +69,6 @@ ul { padding-inline-start: 20px; }
 
 #context { opacity: $opacity; }
 #context:hover { opacity: 1; }
-
-a { color: blue; }
 
 .head{
     display: grid;
