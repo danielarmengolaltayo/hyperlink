@@ -10,4 +10,4 @@ For sharing the progress, I will use a mailing list. The number of subscribers w
 
 I hate spam as much as everybody does. I will use the newsletter only to reach you occasionally with relevant updates. I wouldn't be here, talking about what I'm talking about if I didn't have absolute respect for how we manage personal information. Any significant change in the behavior of the newsletter will be properly notified and you will always have an easy way to opt-out.
 
-You can **[subscribe here](https://newsletter.armengol-altayo.com/subscribe)**.
+You can **[subscribe here](https://newsletter.vewpoint.com/subscribe)**.
