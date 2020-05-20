@@ -3,7 +3,8 @@ head: Platforms manage connections for you. Some of these platforms rule the wor
 footnotes:
   - {id: 1, file: 25}
   - {id: 2, file: 26}
-  - {id: 3, file: 27}
+  - {id: 4, file: 27}
+  - {id: 3, file: 53}
 ---
 
 Suppose we both have a personal webpage and we want it to show that we are friends. In my page I make reference to yours and you do the same towards mine. We want to establish a connection that explains publicly our friendship relationship.
@@ -18,4 +19,4 @@ What these platforms offer, most of the time for free <sup>[1]</sup>, is mainten
 
 Apparently, the deal seems all advantages for the user and it is undeniable that many of these platforms really contribute to improve our daily lives. But we must understand and be aware that **by delegating the responsibility in the management of our connections we are losing control over them**. From the individual perspective, the control granted is almost imperceptible, but at the scale that these companies operate, the accumulated control is easily translated into an immense source of power <sup>[2]</sup>.
 
-More users means potential for more connections. To more connections, more power. The more power, the more capability to influence society <sup>[3]</sup>, for better or for worse.
+More users means potential for more connections. To more connections, more power <sup>[3]</sup>. The more power, the more capability to influence society <sup>[4]</sup>, for better or for worse.
