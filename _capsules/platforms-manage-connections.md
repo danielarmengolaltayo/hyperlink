@@ -3,8 +3,8 @@ head: Platforms manage connections for you. Some of these platforms rule the wor
 footnotes:
   - {id: 1, file: 25}
   - {id: 2, file: 26}
-  - {id: 4, file: 27}
   - {id: 3, file: 53}
+  - {id: 4, file: 27}
 ---
 
 Suppose we both have a personal webpage and we want it to show that we are friends. In my page I make reference to yours and you do the same towards mine. We want to establish a connection that explains publicly our friendship relationship.
